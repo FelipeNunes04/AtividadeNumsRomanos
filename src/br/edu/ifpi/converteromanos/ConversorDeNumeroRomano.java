@@ -18,7 +18,7 @@ public class ConversorDeNumeroRomano {
 				if(romanos.get(numeros[i]) <= romanos.get(numeros[i-1])){
 					soma+=romanos.get(numeros[i]);
 				}else{
-					soma=romanos.get(numeros[i])-romanos.get(numeros[i-1]);
+					soma+=romanos.get(numeros[i])-romanos.get(numeros[i-1])*2;
 				}
 			}
 			return soma;
